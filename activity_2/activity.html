@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Practical Application Activity</title>
+    <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+      background-color: #f4f7f6;
+      color: #333;
+    }
+    h1, h2, h3 { color: #2c3e50; }
+    h1 { border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    a { color: #3498db; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .resized-image {
+      width: 320px; height: auto;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    figure { margin: 1rem 0; text-align: center; }
+    figcaption { font-style: italic; color: #7f8c8d; font-size: 0.9rem; margin-top: 5px; }
+    section {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    audio, video { margin-top: 10px; border-radius: 8px; max-width: 100%; }
+  </style>
+</head>
+<body id="top">
+
+  <h1 id="main-heading">HTML Practical Application Activity</h1>
+  <p>Created by: <strong>Khizziah Legada</strong></p>
+
+  <section id="images">
+    <h2>Images</h2>
+    <img src="images/image1.jpg" alt="A brown wooden desk with a laptop and a cup of coffee" width="400">
+    <img src="images/image2.jpg" alt="A blue mountain range under a clear sky at sunrise" class="resized-image">
+    <figure id="gallery-figure">
+      <img id="gallery-image" src="images/image3.jpg" alt="A small orange cat sleeping on a gray sofa">
+      <figcaption>Figure 1. An image wrapped in a figure element with a descriptive caption.</figcaption>
+    </figure>
+    <p><a href="#top">Back to top</a></p>
+  </section>
+
+  <section id="hyperlinks">
+    <h2>Hyperlinks</h2>
+    <ul>
+      <li><strong>Internal link:</strong> <a href="#images">Go to the Images section</a></li>
+      <li><strong>External link:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN HTML Documentation (opens in a new tab)</a></li>
+      <li><strong>Email link:</strong> <a href="mailto:khizziahlegada@gmail.com?subject=HTML%20Activity">Email me</a></li>
+      <li><strong>Same-page anchor link:</strong> <a href="#dom-section">Jump to the HTML DOM section</a></li>
+    </ul>
+  </section>
+
+  <section id="multimedia">
+    <h2>Multimedia</h2>
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="media/audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element. <a href="media/audio.mp3">Download the audio file</a>.
+    </audio>
+    <h3>Video</h3>
+    <video controls width="480">
+      <source src="media/video.mp4" type="video/mp4">
+      Your browser does not support the video element. <a href="media/video.mp4">Download the video file</a>.
+    </video>
+  </section>
+
+  <section id="useful-tags">
+    <h2>Useful Tags</h2>
+    <!-- I chose <abbr> because it shows the full meaning of an abbreviation on hover. -->
+    <p>The <abbr title="HyperText Markup Language">HTML</abbr> activity uses several tags beyond the basics.</p>
+    <!-- I chose <mark> because it highlights important text the reader should notice. -->
+    <p>Remember to <mark>push your branch and open a Pull Request</mark> before the deadline.</p>
+    <!-- I chose <blockquote> because it separates a quoted passage from my own writing. -->
+    <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">
+      The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web.
+    </blockquote>
+    <pre><code>git checkout -b legada-khizziah-act-2
+git add .
+git commit -m "Add HTML activity"
+git push origin legada-khizziah-act-2</code></pre>
+
+    <p>&copy; 2026 Khizziah Legada. All rights reserved.</p>
+  </section>
+
+  <section id="dom-section">
+    <h2>HTML DOM</h2>
+    <p>Elements with an <code>id</code>: <code>main-heading</code>, <code>gallery-figure</code>, <code>gallery-image</code>, <code>dom-section</code>, <code>top</code>.</p>
+    <p>DevTools Elements panel screenshot showing the nested DOM tree:</p>
+    <img src="dom-tree.png" alt="Browser DevTools Elements panel showing the nested HTML DOM tree" width="600">
+  </section>
+
+  <p><a href="#top">Back to top</a></p>
+
+</body>
+</html>
+
